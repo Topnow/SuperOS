@@ -1,0 +1,5 @@
+		
+		
+		1.新增Staff，Staffadmin类
+		2.staffadmin增加 添加员工方法和删除员工方法，删除员工方法需要jdbc提供SQL代码
+		
