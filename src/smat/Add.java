@@ -1,9 +1,22 @@
 package smat;
 
+/*
+ * É¾³ý
+ */
+//Ìí¼Ó
 public class Add {
+	
 	private String StaffID;
 	private String StaffName;
 	private String StaffSex;
+	
+	public Add(String staffID, String staffName, String staffSex) {
+		super();
+		StaffID = staffID;
+		StaffName = staffName;
+		StaffSex = staffSex;
+	}
+	
 	public String getStaffID() {
 		return StaffID;
 	}
