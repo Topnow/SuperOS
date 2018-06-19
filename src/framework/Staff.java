@@ -7,25 +7,15 @@ package framework;
  *
  */
 public class Staff {
-		//定义员工ID 名字 性别 密码
+		//定义员工ID 名字 性别
 		private String staffid;
 		private String staffname;
 		private String staffsex;
 		private String staffpswd;
 		
-		//添加数据库方法实现访问，添加，删除；
-		
-		//添加员工
-		public Staff(String staffid, String staffname, String staffsex, String staffpswd) {
-			super();
-			this.staffid = staffid;
-			this.staffname = staffname;
-			this.staffsex = staffsex;
+		public void setStaffpswd(String staffpswd) {
 			this.staffpswd = staffpswd;
 		}
-		
-		
-		
 		public String getStaffid() {
 			return staffid;
 		}
