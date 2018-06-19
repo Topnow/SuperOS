@@ -9,17 +9,14 @@ import framework.Staff;
 
 
 
-public class StaffAdmin {
-	Staff staff = new Staff();
+public class StaffAdmin extends Staff {
 	
-	//添加员工方法	
-	public void staffadd(String id,String name,String sex,String pswd) {
-		staff.setStaffid(id);
-		staff.setStaffname(name);
-		staff.setStaffsex(sex);
-		staff.setStaffpswd(pswd);
+
+	public StaffAdmin(String staffid, String staffname, String staffsex, String staffpswd) {
+		super(staffid, staffname, staffsex, staffpswd);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	//删除员工方法
 	public void staffdel(String id) {
 		//提供mysql语句实现删除
@@ -27,7 +24,7 @@ public class StaffAdmin {
 	
 	//查询员工方法
 	public boolean staffsee(String id) {
-		if (id.equals(staff.getStaffid())) {
+		if (id.equals(this.getStaffid())) {
 			return true;
 		}else {
 			return false;
